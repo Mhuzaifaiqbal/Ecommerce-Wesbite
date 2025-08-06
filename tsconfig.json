@@ -1,0 +1,53 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ],
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     },
+//     "noImplicitAny": false,
+//     "noUnusedParameters": false,
+//     "skipLibCheck": true,
+//     "allowJs": true,
+//     "noUnusedLocals": false,
+//     "strictNullChecks": false
+    
+//   }
+// }
+
+{
+  "compilerOptions": {
+    "target": "ES6",                           // modern JS output
+    "module": "ESNext",                        // module system
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],// libs to include for typings
+    "allowJs": true,                          // allow JS files
+    "checkJs": false,                         // don't type-check JS
+    "jsx": "react-jsx",                       // JSX transform for React 17+
+    "strict": true,                           // enable all strict checks (can disable if you want)
+    "noImplicitAny": false,                   // your preference: allow implicit any
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,                     // skip type checking of node_modules for speed
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",                           // base directory for non-relative imports
+    "paths": {
+      "@/*": ["src/*"]                        // your alias config
+    },
+    "typeRoots": ["./node_modules/@types", "./src/types"]  // <-- add your types here
+  },
+  "include": [
+    "src/**/*",       // your source files
+    "src/types/**/*"  // your custom type declarations
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
