@@ -1,0 +1,14 @@
+This project is a fully responsive and modern e-commerce website built using React, JavaScript, Framer Motion, Tailwind CSS, and more. Designed with a sleek purple-themed UI, it showcases Apple products in a clean and interactive shopping experience.
+
+✨ Key Features:
+🖥️ Product Showcase – Explore a range of Apple products with elegant product cards and images
+
+🧾 Filter & Sort Options – Users can filter products by categories, price, and features
+
+💬 User Reviews – Dynamic review sections for product credibility
+
+🎨 Framer Motion Animations – Smooth transitions and UI animations for a futuristic feel
+
+📱 Responsive Design – Mobile-first layout with Tailwind’s utility classes
+
+⚙️ Component-Based Architecture – Clean React component structure for scalability
